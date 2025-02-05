@@ -1,0 +1,41 @@
+.key_benefits_sec {
+  .mobile_view {
+    margin-top: 2rem;
+  }
+  .sub_heading {
+    margin-bottom: 0;
+  }
+  .detail_sec {
+    width: 70%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .key_benefit_wrap {
+    padding: 0 0.5rem;
+    figure {
+      position: relative;
+      width: 100%;
+      height: 350px;
+      overflow: hidden;
+      margin: 0;
+      border-radius: 16px;
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        transition: all 0.5s ease-in-out;
+      }
+      &:hover {
+        img {
+          transform: scale(1.1);
+        }
+      }
+    }
+    .para_comm {
+      @media (max-width: 576px) {
+        text-align: justify;
+      }
+    }
+  }
+}

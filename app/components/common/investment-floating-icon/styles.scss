@@ -1,0 +1,30 @@
+.inv_floating_icon_wrape {
+  position: fixed;
+  top: 5.5rem;
+  right: 2rem;
+  z-index: 9999999;
+  @media (max-width: 576px) {
+    top: 5rem;
+    right: 1rem;
+  }
+  .contact-pannel-btn {
+    background: transparent;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    figure {
+      position: relative;
+      width: 60px;
+      height: 60px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      border-radius: 100%;
+      margin: 0;
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
+}

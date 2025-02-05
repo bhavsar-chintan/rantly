@@ -1,0 +1,29 @@
+.contact-sec-area {
+  background: url("../../../assets/home/contactImg.webp");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 0 2rem;
+  border-radius: 16px;
+  @media (max-width: 576px) {
+    padding: 0 1rem;
+  }
+  .content_sec {
+    .main_sec_heading {
+      color: #fff;
+      width: 60%;
+      margin-bottom: 1rem;
+      @media (max-width: 776px) {
+        width: 100%;
+      }
+    }
+    .para_comm {
+      color: #fff;
+      margin-bottom: 2rem;
+    }
+    .theme_btn {
+      font-size: 16px;
+      text-decoration: none;
+    }
+  }
+}

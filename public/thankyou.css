@@ -1,0 +1,50 @@
+:root {
+  --primaryColor: #1b365d;
+  --secondaryColor: #dc6200;
+  --bgColor: #4f5052;
+  --black: #000000;
+  --white: #ffffff;
+}
+
+.wrapper {
+  min-height: 100vh;
+  font-family: "Poppins", sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: var(--bgColor);
+  color: var(--white);
+}
+
+.linestyle {
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.content h1 {
+  margin-bottom: 2rem;
+  font-weight: 800;
+  font-family: "Poppins", sans-serif;
+}
+
+.btn-submit {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 500;
+  padding: 12px 24px;
+  border-radius: 8px;
+  margin-top: 1rem;
+  color: #000;
+  background: #fff;
+  border: 1px solid #fff;
+  text-transform: capitalize;
+  transition: all 0.5s ease-in-out;
+}
+
+.btn-submit:hover,
+.btn-submit:focus {
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+}

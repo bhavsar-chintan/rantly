@@ -1,0 +1,23 @@
+.faqs-area {
+  .accordion-item {
+    .accordion-header {
+      .accordion-button {
+        font-size: 18px;
+        font-weight: 500;
+        padding: 1rem 0;
+        line-height: 150%;
+        &:not(.collapsed),
+        &:focus {
+          box-shadow: none;
+          background: transparent;
+        }
+      }
+    }
+    .accordion-body {
+      font-size: 16px;
+      line-height: 160%;
+      padding: 1rem 0;
+      text-align: justify;
+    }
+  }
+}

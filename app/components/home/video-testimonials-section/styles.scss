@@ -1,0 +1,67 @@
+@import "node_modules/react-modal-video/scss/modal-video.scss";
+.video-testimonials-sec {
+  .mobile_view {
+    margin-top: 2rem;
+  }
+  .video_testimonial_wrap {
+    padding: 0 0.5rem;
+    .video_testimonial_item {
+      content-visibility: auto;
+      contain-intrinsic-size: 400px;
+      padding: 0 0.5rem;
+      position: relative;
+      figure {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+        height: 400px;
+        margin: 0;
+        border-radius: 16px;
+        &::before {
+          content: "";
+          position: absolute;
+          z-index: 1;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          border-radius: 16px;
+          background: rgba(0, 0, 0, 0.3);
+          transition: all 0.3s ease-in-out;
+        }
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+      .content_sec {
+        position: absolute;
+        z-index: 2;
+        left: 8%;
+        right: 8%;
+        bottom: 5%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 15px;
+        .sub_heading {
+          font-size: 16px;
+          color: #fff;
+          margin-bottom: 0.5rem;
+        }
+        .para_comm {
+          font-size: 14px;
+          color: #fff;
+          margin-bottom: 0;
+        }
+        .icon_wrape {
+          cursor: pointer;
+          .icon_style {
+            color: #fff;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,43 @@
+.phases_sec {
+  .mobile_view {
+    margin-top: 2rem;
+  }
+  .main_sec_heading {
+    margin-bottom: 0.5rem;
+  }
+  .sub_heading {
+    margin-bottom: 0;
+  }
+  .detail_sec {
+    width: 70%;
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+  .phases_wrap {
+    padding: 0 0.5rem;
+    .phases_item {
+      padding: 1.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.14);
+      border-radius: 16px;
+      min-height: 316px;
+
+      h3 {
+        font-size: 22px;
+        line-height: 150%;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 0.5rem;
+      }
+      ul {
+        margin-bottom: 0;
+      }
+      p {
+        font-size: 16px;
+        line-height: 160%;
+        font-weight: 400;
+        color: #000;
+      }
+    }
+  }
+}

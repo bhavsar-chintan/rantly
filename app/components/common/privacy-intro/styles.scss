@@ -1,0 +1,46 @@
+.policy_intro_sec {
+  .content_wrap {
+    h3 {
+      font-size: 20px;
+      line-height: 140%;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    h4 {
+      font-size: 18px;
+      line-height: 140%;
+      margin-bottom: 1rem;
+      font-weight: 600;
+      text-transform: capitalize;
+    }
+    p {
+      font-size: 16px;
+      font-weight: 400;
+      line-height: 140%;
+      color: #000;
+      margin-bottom: 1rem;
+      text-align: justify;
+      a {
+        color: #000000;
+        text-decoration: none;
+        font-size: 16px;
+        line-height: 140%;
+        &:hover {
+          color: #be0022;
+        }
+      }
+    }
+    ul {
+      li {
+        font-size: 15px;
+        line-height: 1.5;
+        margin-bottom: 0.5rem;
+        font-weight: 400;
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+  }
+}

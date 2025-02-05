@@ -1,0 +1,23 @@
+.contact-info-area {
+  .contact-item {
+    .icon-style {
+      font-size: 30px;
+    }
+    .sub_heading {
+      margin: 1rem 0;
+    }
+    .para_comm {
+      margin-bottom: 1rem;
+    }
+    a {
+      font-size: 16px;
+      font-weight: 500;
+      line-height: 160%;
+      color: #000;
+      text-decoration: none;
+      &:hover {
+        color: #be0022;
+      }
+    }
+  }
+}

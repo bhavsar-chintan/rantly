@@ -1,0 +1,51 @@
+.overview_sec {
+  .overview_wrap {
+    display: flex;
+    justify-content: space-between;
+    @media (max-width: 768px) {
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .main_sec_heading {
+      margin-bottom: 0.5rem;
+    }
+    .para_comm {
+      font-weight: 500;
+    }
+    ul {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      list-style: none;
+      padding: 0;
+      margin-bottom: 1rem;
+      @media (max-width: 768px) {
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+      li {
+        font-size: 16px;
+        line-height: 160%;
+        font-weight: 400;
+        color: #000;
+      }
+    }
+    .price_wrap {
+      text-align: end;
+      @media (max-width: 768px) {
+        text-align: start;
+      }
+      h4 {
+        font-size: 32px;
+        line-height: 130%;
+        font-weight: 600;
+        color: #000;
+        margin-bottom: 0.5rem;
+        span {
+          font-size: 16px;
+          font-weight: 500;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/logo.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet prefetch"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.5/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="thankyou.css" />
+    <title>Thank You | NewEdge Realty</title>
+  </head>
+
+  <body dir="auto">
+    <div class="wrapper">
+      <div class="content text-xs-center">
+        <h1 class="display-3 title">Thank You!</h1>
+        <p class="lead detail">
+          We have received your query. Our team will get in touch with you
+          shortly.
+        </p>
+        <hr class="linestyle" />
+        <p class="lead">
+          <button
+            class="btn btn-submit"
+            role="button"
+            onclick="redirectToHomepage();"
+          >
+            Go back
+          </button>
+        </p>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js"></script>
+    <script>
+      function redirectToHomepage() {
+        const homepageUrl = "/";
+        const langUrl = window.open(homepageUrl, "_self");
+      }
+      setTimeout(function () {
+        history.back();
+      }, 3000);
+    </script>
+  </body>
+</html>

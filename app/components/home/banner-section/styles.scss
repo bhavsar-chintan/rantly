@@ -1,0 +1,96 @@
+.HomeBanner {
+  max-width: 100vw;
+  overflow-x: hidden;
+  .bannerWrapper {
+    position: relative;
+    width: 100%;
+    height: 720px;
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      z-index: 1;
+    }
+    .bannerDetails {
+      padding: 0 80px;
+      position: relative;
+      z-index: 550;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      gap: 40px;
+      color: #fff;
+      .content_wrap {
+        .tag_line {
+          color: #fff;
+          margin-bottom: 1rem;
+        }
+        h1 {
+          color: #fff;
+          font-size: 56px;
+          line-height: 120%;
+          font-weight: 600;
+          margin-bottom: 1rem;
+        }
+      }
+      .theme_btn {
+        font-size: 18px;
+      }
+      .banner_form_wrap {
+        width: 60%;
+        @media (max-width: 1250px) {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .slick-dots li button:before {
+    color: #fff;
+    font-size: 12px;
+    line-height: 12px;
+    opacity: 0.4;
+  }
+
+  .slick-dots li {
+    margin: 0 2px;
+  }
+  .slick-dots {
+    bottom: 30px;
+    left: 80px;
+    width: max-content;
+  }
+  .slick-dots li.slick-active button::before {
+    opacity: 1;
+  }
+  @media (max-width: 995px) {
+    .bannerWrapper {
+      .bannerDetails {
+        h1 {
+          font-size: 40px;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 775px) {
+    .bannerWrapper {
+      .bannerDetails {
+        padding: 20px;
+        .content_wrap {
+          width: 100%;
+          h1 {
+            font-size: 40px;
+          }
+        }
+      }
+    }
+    .slick-dots {
+      left: auto;
+      width: 100%;
+    }
+  }
+}

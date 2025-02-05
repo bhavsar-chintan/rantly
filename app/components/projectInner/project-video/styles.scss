@@ -1,0 +1,46 @@
+@import "node_modules/react-modal-video/scss/modal-video.scss";
+.project_video_area {
+  .video_container {
+    position: relative;
+    figure {
+      position: relative;
+      overflow: hidden;
+      width: 100%;
+      height: 550px;
+      margin: 0;
+      border-radius: 16px;
+      @media (max-width: 768px) {
+        height: 400px;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border-radius: 16px;
+        background: rgba(0, 0, 0, 0.2);
+        transition: all 0.3s ease-in-out;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    .icon_wrape {
+      position: absolute;
+      z-index: 2;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      cursor: pointer;
+      .icon_style {
+        color: #fff;
+        font-size: 70px;
+      }
+    }
+  }
+}
